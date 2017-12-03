@@ -8,19 +8,16 @@ import org.testng.annotations.Parameters;
 
 public class TestBase {
 
-    public TestBase() {
-
-    }
-
-    @BeforeClass(alwaysRun = true)
     @Parameters("browser")
+    @BeforeClass(alwaysRun = true)
     public void initWebDriver(BrowserEnum browser) {
-        WebDriverRunner.setWebDriver(new WebDriverFactory(browser).getWebdriver());
+        System.setProperty("selenide.browser", browser.toString());
+        WebDriverFactory.setProperties();
     }
 
     @AfterClass(alwaysRun = true)
     public void cleanUp() {
-        WebDriverRunner.closeWebDriver();
+
     }
 
 }

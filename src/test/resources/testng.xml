@@ -6,7 +6,7 @@
 
     <test name="feeds" parallel="false" thread-count="1" preserve-order="true">
         <classes>
-            <class name="demoqa.VerifyHomePage"/>
+            <class name="demoqa.VerifyGeneralMenu"/>
         </classes>
     </test>
 

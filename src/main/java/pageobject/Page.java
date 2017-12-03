@@ -16,9 +16,9 @@ public abstract class Page implements IPageLoaded {
 
     protected WebDriver webDriver;
 
-    public Page(WebDriver webDriver) {
-        this.webDriver = webDriver;
-    }
+//    public Page(WebDriver webDriver) {
+//        this.webDriver = webDriver;
+//    }
 
     /**
      * @return current WebDriver instance

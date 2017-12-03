@@ -47,7 +47,7 @@ public class WebDriverFactory {
      * Capabilities are set in a client class before instantiating this class and passed through the constructor.
      * @return  We
      */
-    private WebDriver initWebDriver() {
+    public WebDriver initWebDriver() {
         if(browserEnum != null) {
             if(browserEnum.equals(BrowserEnum.FIREFOX)) {
                 System.setProperty("webdriver.gecko.driver", getOS().getGeckoDriverPath());
@@ -76,7 +76,7 @@ public class WebDriverFactory {
      * @return OSEnum           current operating system enum
      * @throws RuntimeException in case os.name property doesn't match any of the specified
      */
-    private OSEnum getOS() throws RuntimeException {
+    private static OSEnum getOS() throws RuntimeException {
         String osName = System.getProperty("os.name");
         String osArch = System.getProperty("os.arch");
 
@@ -104,6 +104,11 @@ public class WebDriverFactory {
      */
     private void manageTimeouts() {
         webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
+
+    public static void setProperties() {
+        System.setProperty("webdriver.gecko.driver", getOS().getGeckoDriverPath());
+        System.setProperty("webdriver.chrome.driver", getOS().getChromeDriverPath());
     }
 
 }
