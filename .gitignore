@@ -23,6 +23,7 @@ ompiled source #
 *.log
 *.sql
 *.sqlite
+target/*
 
 # OS generated files #
 ######################
@@ -36,5 +37,6 @@ Thumbs.db
 
 # Intellij Idea generated files #
 ######################
-.idea
-.iml
+*.idea
+*.iml
+
