@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="wispiSuite" verbose="1" thread-count="1" parallel="tests" preserve-order="true">
+
+    <!--These parameters need to be changed in accordance with the application and device, you want to run the tests on.-->
+    <parameter name="deviceId" value=""/>
+    <parameter name="androidVersion" value=""/>
+    <parameter name="phoneNumber" value=""/>
+    <parameter name="appPath" value=""/>
+    <parameter name="appPackage" value=""/>
+    <parameter name="appActivity" value=""/>
+    
+    <test name="test1" parallel="false" thread-count="1" preserve-order="true">
+        <classes>
+
+        </classes>
+    </test>
+
+</suite>
