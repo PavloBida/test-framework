@@ -10,6 +10,11 @@ import org.slf4j.Logger;
 
 import java.util.NoSuchElementException;
 
+/**
+ * Created by Pavlo Bida in 2017
+ * https://github.com/PavloBida
+ */
+
 public abstract class Page implements IPageLoaded {
 
     private static final Logger LOG = LogFactory.getLogger(Page.class);

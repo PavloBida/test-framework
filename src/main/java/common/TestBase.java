@@ -6,6 +6,11 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
+/**
+ * Created by Pavlo Bida in 2017
+ * https://github.com/PavloBida
+ */
+
 public class TestBase {
 
     @Parameters("browser")

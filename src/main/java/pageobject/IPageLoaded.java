@@ -1,5 +1,10 @@
 package pageobject;
 
+/**
+ * Created by Pavlo Bida in 2017
+ * https://github.com/PavloBida
+ */
+
 public interface IPageLoaded {
 
     /**

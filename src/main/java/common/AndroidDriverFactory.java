@@ -11,6 +11,11 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Created by Pavlo Bida in 2017
+ * https://github.com/PavloBida
+ */
+
 public class AndroidDriverFactory {
 
     private static final Logger LOG = LogFactory.getLogger(AndroidDriverFactory.class);

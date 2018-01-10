@@ -9,6 +9,11 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Created by Pavlo Bida in 2017
+ * https://github.com/PavloBida
+ */
+
 public class WebDriverFactory {
 
     private WebDriver webDriver;
