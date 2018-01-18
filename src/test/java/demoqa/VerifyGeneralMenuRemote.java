@@ -2,17 +2,15 @@ package demoqa;
 
 import common.RemoteDriverFactory;
 import common.RemoteTestBase;
-import common.WebDriverFactory;
 import enums.BrowserEnum;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pageobject.demoqa.AboutUsPage;
-import pageobject.demoqa.HomePage;
+import selenide_pageobject.demoqa.AboutUsPage;
+import selenide_pageobject.demoqa.HomePage;
 
 import java.net.MalformedURLException;
 

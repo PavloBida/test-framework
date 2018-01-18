@@ -1,13 +1,11 @@
 package demoqa;
 
 import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.Condition.*;
 
-import common.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pageobject.demoqa.AboutUsPage;
-import pageobject.demoqa.HomePage;
+import selenide_pageobject.demoqa.AboutUsPage;
+import selenide_pageobject.demoqa.HomePage;
 
 public class VerifyGeneralMenu extends TestBase {
 
