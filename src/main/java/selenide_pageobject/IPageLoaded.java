@@ -1,4 +1,4 @@
-package pageobject;
+package selenide_pageobject;
 
 /**
  * Created by Pavlo Bida in 2017

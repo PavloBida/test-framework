@@ -1,4 +1,4 @@
-package pageobject.demoqa;
+package selenide_pageobject.demoqa;
 
 import static com.codeborne.selenide.Selenide.$;
 

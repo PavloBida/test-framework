@@ -1,8 +1,8 @@
-package pageobject.demoqa;
+package selenide_pageobject.demoqa;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
-import pageobject.Page;
+import selenide_pageobject.Page;
 
 import static com.codeborne.selenide.Selenide.$;
 

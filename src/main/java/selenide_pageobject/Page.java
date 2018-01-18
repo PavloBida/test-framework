@@ -1,4 +1,4 @@
-package pageobject;
+package selenide_pageobject;
 
 import common.LogFactory;
 import org.openqa.selenium.JavascriptExecutor;

@@ -1,6 +1,7 @@
-package common;
+package demoqa;
 
 import com.codeborne.selenide.WebDriverRunner;
+import common.WebDriverFactory;
 import enums.BrowserEnum;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
