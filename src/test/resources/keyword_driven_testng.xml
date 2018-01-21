@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="demoqa" verbose="1" thread-count="1" parallel="tests">
+
+    <parameter name="browser" value="CHROME"/>
+
+    <test name="general-menu" parallel="false" thread-count="1">
+        <classes>
+            <class name="demoqa_keyword_driven.VerifyHomePage"/>
+        </classes>
+    </test>
+
+</suite>

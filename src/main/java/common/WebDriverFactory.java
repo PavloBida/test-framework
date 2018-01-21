@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.slf4j.Logger;
+import selenide_pageobject.Page;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,6 +17,8 @@ import java.util.concurrent.TimeUnit;
  */
 
 public class WebDriverFactory {
+
+    private static final Logger LOG = LogFactory.getLogger(WebDriverFactory.class);
 
     private WebDriver webDriver;
     private BrowserEnum browserEnum;
@@ -73,6 +77,7 @@ public class WebDriverFactory {
             throw new IllegalArgumentException("No browser provided");
         }
         manageTimeouts();
+        LOG.info("Initializing webdriver for browser: " + browserEnum + ", OS: " + getOS());
         return webDriver;
     }
 
