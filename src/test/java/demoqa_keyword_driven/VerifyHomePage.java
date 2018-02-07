@@ -1,7 +1,5 @@
 package demoqa_keyword_driven;
 
-import keyword_driven_pageobject.AboutUsPage;
-import keyword_driven_pageobject.HomePage;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
 

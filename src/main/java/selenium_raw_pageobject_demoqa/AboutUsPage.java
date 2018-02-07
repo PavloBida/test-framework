@@ -1,4 +1,4 @@
-package selenium_pagefactory.demoqa_pageobject;
+package selenium_raw_pageobject_demoqa;
 
 
 import org.openqa.selenium.WebDriver;

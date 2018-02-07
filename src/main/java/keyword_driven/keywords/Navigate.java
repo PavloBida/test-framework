@@ -1,4 +1,4 @@
-package keyword_driver;
+package keyword_driven.keywords;
 
 import common.LogFactory;
 import org.openqa.selenium.WebDriver;
