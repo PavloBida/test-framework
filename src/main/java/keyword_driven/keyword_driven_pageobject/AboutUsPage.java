@@ -1,12 +1,10 @@
-package keyword_driven_pageobject;
+package keyword_driven.keyword_driven_pageobject;
 
 
-import keyword_driver.Action;
-import keyword_driver.ExtendedWebElement;
+import keyword_driven.keywords.Action;
+import keyword_driven.keywords.ExtendedWebElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import ru.yandex.qatools.allure.annotations.Step;
 
 public class AboutUsPage extends TopMenu {

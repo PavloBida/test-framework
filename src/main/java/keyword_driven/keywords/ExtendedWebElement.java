@@ -1,4 +1,4 @@
-package keyword_driver;
+package keyword_driven.keywords;
 
 import org.openqa.selenium.*;
 

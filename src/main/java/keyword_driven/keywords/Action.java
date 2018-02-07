@@ -1,11 +1,8 @@
-package keyword_driver;
+package keyword_driven.keywords;
 
 import common.LogFactory;
-import common.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
-import ru.yandex.qatools.allure.annotations.Step;
 
 public class Action {
 

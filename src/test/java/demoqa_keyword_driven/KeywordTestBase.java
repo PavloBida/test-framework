@@ -2,10 +2,10 @@ package demoqa_keyword_driven;
 
 import common.WebDriverFactory;
 import enums.BrowserEnum;
-import keyword_driven_pageobject.AboutUsPage;
-import keyword_driven_pageobject.HomePage;
-import keyword_driver.Action;
-import keyword_driver.Navigate;
+import keyword_driven.keyword_driven_pageobject.AboutUsPage;
+import keyword_driven.keyword_driven_pageobject.HomePage;
+import keyword_driven.keywords.Action;
+import keyword_driven.keywords.Navigate;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
