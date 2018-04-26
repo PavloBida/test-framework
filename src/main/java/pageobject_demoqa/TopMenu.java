@@ -1,9 +1,14 @@
-package selenium_raw_pageobject_demoqa;
+package pageobject_demoqa;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import pageobject_demoqa.main_menu_pages.*;
+
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
 public class TopMenu {
 
@@ -54,6 +59,12 @@ public class TopMenu {
     public ContactPage clickContactButton() {
         contactButton.click();
         return PageFactory.initElements(driver, ContactPage.class);
+    }
+
+    public List<WebElement> getAllTopMenuButtons() {
+        return new LinkedList<>(Arrays.asList(
+                homeButton, aboutUsButton, servicesButton, demoDropdown, blogButton, contactButton)
+        );
     }
 
 

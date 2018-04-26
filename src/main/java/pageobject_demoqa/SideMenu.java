@@ -1,8 +1,14 @@
-package selenium_raw_pageobject_demoqa;
+package pageobject_demoqa;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import pageobject_demoqa.main_menu_pages.DraggablePage;
+
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
 public class SideMenu extends TopMenu {
 
@@ -61,6 +67,19 @@ public class SideMenu extends TopMenu {
     public SideMenu(WebDriver driver) {
         super(driver);
         this.driver = driver;
+    }
+
+    public List<WebElement> getAllSideMenuButtons() {
+        return new LinkedList<>(Arrays.asList(
+                registrationButton, draggableButton, droppableButton, resizableButton, selectableButton, sortableButton,
+                accordionButton, autoCompleteButton, datePickerButton, menuButton, sliderButton, tabsButton,
+                tooltipButton, framesAndWindowsButton));
+    }
+
+    public DraggablePage clickDraggableButton() {
+        demoDropdown.click();
+        draggableButton.click();
+        return PageFactory.initElements(driver, DraggablePage.class);
     }
 
 

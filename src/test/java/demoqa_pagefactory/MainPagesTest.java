@@ -2,9 +2,9 @@ package demoqa_pagefactory;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import selenium_raw_pageobject_demoqa.AboutUsPage;
-import selenium_raw_pageobject_demoqa.ContactPage;
-import selenium_raw_pageobject_demoqa.ServicesPage;
+import pageobject_demoqa.main_menu_pages.AboutUsPage;
+import pageobject_demoqa.main_menu_pages.ContactPage;
+import pageobject_demoqa.main_menu_pages.ServicesPage;
 
 public class MainPagesTest extends TestBase {
 
