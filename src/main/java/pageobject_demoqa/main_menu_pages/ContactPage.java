@@ -1,8 +1,9 @@
-package selenium_raw_pageobject_demoqa;
+package pageobject_demoqa.main_menu_pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import pageobject_demoqa.SideMenu;
 
 public class ContactPage extends SideMenu {
 

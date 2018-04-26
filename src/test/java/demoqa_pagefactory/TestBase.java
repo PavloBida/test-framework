@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
-import selenium_raw_pageobject_demoqa.HomePage;
+import pageobject_demoqa.main_menu_pages.HomePage;
 
 public class TestBase {
 

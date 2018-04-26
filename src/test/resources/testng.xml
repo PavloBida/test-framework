@@ -6,7 +6,9 @@
 
     <test name="general-menu" parallel="false" thread-count="1">
         <classes>
-            <class name="demoqa_keyword_driven.VerifyHomePage"/>
+            <!--<class name="demoqa_pagefactory.HomePageTest"/>-->
+            <!--<class name="demoqa_pagefactory.MainPagesTest"/>-->
+            <class name="demoqa_pagefactory.DraggableTest"/>
         </classes>
     </test>
 
