@@ -2,12 +2,14 @@
 
 <suite name="demoqa" verbose="1" thread-count="1" parallel="tests">
 
+    <!-- This parameter defines which browser the suite is going to run on -->
+    <!-- Possible options are defined here: src/main/java/enums/BrowserEnum.java -->
     <parameter name="browser" value="CHROME"/>
 
     <test name="general-menu" parallel="false" thread-count="1">
         <classes>
-            <!--<class name="demoqa_pagefactory.HomePageTest"/>-->
-            <!--<class name="demoqa_pagefactory.MainPagesTest"/>-->
+            <class name="demoqa_pagefactory.HomePageTest"/>
+            <class name="demoqa_pagefactory.MainPagesTest"/>
             <class name="demoqa_pagefactory.DraggableTest"/>
         </classes>
     </test>
