@@ -10,7 +10,7 @@ import java.net.URL;
 public class RemoteDriverFactory {
 
     public RemoteWebDriver getInstance(BrowserEnum browser) throws MalformedURLException {
-        DesiredCapabilities capabilities = new DesiredCapabilities();
+        DesiredCapabilities capabilities;
 
         if (browser.equals(BrowserEnum.CHROME)) {
             capabilities = DesiredCapabilities.chrome();

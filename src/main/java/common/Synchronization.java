@@ -32,7 +32,7 @@ public class Synchronization {
         return new FluentWait<>(driver)
                 .pollingEvery(100, TimeUnit.MILLISECONDS)
                 .ignoring(NoSuchElementException.class)
-                .withTimeout(20, TimeUnit.SECONDS)
+                .withTimeout(20, TimeUnit.MILLISECONDS)
                 .withMessage("Couldn't find element even after 20 seconds")
                 .until(webElement -> driver.findElement(selector));
     }
