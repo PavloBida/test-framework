@@ -1,4 +1,4 @@
-package demoqa_pagefactory;
+package common;
 
 import common.Synchronization;
 import common.WebDriverFactory;
@@ -10,11 +10,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import pageobject_demoqa.main_menu_pages.HomePage;
+import ru.yandex.qatools.allure.annotations.Step;
 
-public class TestBase {
+public class WebTestBase {
 
     protected Synchronization sync;
-    protected WebDriver driver;
+    protected static WebDriver driver;
     protected HomePage homePage;
 
     /**
@@ -24,8 +25,9 @@ public class TestBase {
      * - Initializing other objects, that are needed in each test
      * @param browser
      */
-    @Parameters("browser")
     @BeforeClass
+    @Parameters("browser")
+    @Step("Opening browser and navigating home page")
     public void setup(@Optional("CHROME") BrowserEnum browser) {
         driver = new WebDriverFactory(browser).getWebdriver();
         sync = new Synchronization(driver);
@@ -34,7 +36,10 @@ public class TestBase {
     }
 
     @AfterClass
+    @Step("Closing browser")
     public void tearDown() {
         driver.quit();
     }
+
+    public static WebDriver getDriver() {return driver;}
 }

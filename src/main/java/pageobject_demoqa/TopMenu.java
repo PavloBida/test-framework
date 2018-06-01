@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import pageobject_demoqa.main_menu_pages.*;
+import ru.yandex.qatools.allure.annotations.Step;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -36,26 +37,31 @@ public class TopMenu {
         this.driver = driver;
     }
 
+    @Step("Clicked Home button")
     public HomePage clickHomeButton() {
         homeButton.click();
         return PageFactory.initElements(driver, HomePage.class);
     }
 
+    @Step("Clicked About us button")
     public AboutUsPage clickAboutUsButton() {
         aboutUsButton.click();
         return PageFactory.initElements(driver, AboutUsPage.class);
     }
 
+    @Step("Clicked Services button")
     public ServicesPage clickServicesButton() {
         servicesButton.click();
         return PageFactory.initElements(driver, ServicesPage.class);
     }
 
+    @Step("Clicked Blog button")
     public BlogPage clickBlogButton() {
         blogButton.click();
         return PageFactory.initElements(driver, BlogPage.class);
     }
 
+    @Step("Clicked Contact button")
     public ContactPage clickContactButton() {
         contactButton.click();
         return PageFactory.initElements(driver, ContactPage.class);

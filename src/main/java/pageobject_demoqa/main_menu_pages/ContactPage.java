@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pageobject_demoqa.SideMenu;
+import ru.yandex.qatools.allure.annotations.Step;
 
 public class ContactPage extends SideMenu {
 
@@ -32,6 +33,7 @@ public class ContactPage extends SideMenu {
         this.driver = driver;
     }
 
+    @Step("Verifying that 'Contact' page is opened")
     public boolean isPageLoaded() {
         return pageTitle.getText().equals("Contact");
     }

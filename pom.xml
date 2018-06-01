@@ -78,12 +78,16 @@
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/web_testng.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <properties>
                         <property>
                             <name>listener</name>
                             <value>ru.yandex.qatools.allure.testng.AllureTestListener</value>
+                        </property>
+                        <property>
+                            <name>listener</name>
+                            <value>common.ScreenshotListener</value>
                         </property>
                     </properties>
                 </configuration>

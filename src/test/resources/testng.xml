@@ -14,4 +14,7 @@
         </classes>
     </test>
 
+    <listeners>
+        <listener class-name="common.ScreenshotListener" />
+    </listeners>
 </suite>
