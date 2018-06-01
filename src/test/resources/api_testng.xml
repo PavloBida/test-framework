@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="demoqa" verbose="1" thread-count="1" parallel="tests">
+
+    <!-- This parameter defines which browser the suite is going to run on -->
+    <!-- Possible options are defined here: src/main/java/enums/BrowserEnum.java -->
+
+    <test name="api-tests" parallel="false" thread-count="1">
+        <classes>
+            <class name="api_testing.TestJSONPlaceholder"/>
+            <class name="api_testing.ParseJson"/>
+        </classes>
+    </test>
+</suite>

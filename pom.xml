@@ -23,7 +23,8 @@
         <rest-assured.version>3.0.6</rest-assured.version>
 
         <!--Configuration-->
-        <testng.file.path>src/test/resources/testng.xml</testng.file.path>
+        <testng.file.path>src/test/resources/</testng.file.path>
+        <suite.xml.file>testng.xml</suite.xml.file>
 
     </properties>
 
@@ -78,7 +79,7 @@
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>${testng.file.path}${suite.xml.file}</suiteXmlFile>
                     </suiteXmlFiles>
                     <properties>
                         <property>
