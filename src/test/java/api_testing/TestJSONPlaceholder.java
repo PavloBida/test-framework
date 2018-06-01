@@ -5,6 +5,11 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
+/**
+ * Created by Pavlo Bida in 2018
+ * https://github.com/PavloBida
+ */
+
 public class TestJSONPlaceholder extends ApiTestBase{
 
     private final String POSTS = "/posts";

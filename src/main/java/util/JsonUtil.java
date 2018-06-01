@@ -8,6 +8,11 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Created by Pavlo Bida in 2018
+ * https://github.com/PavloBida
+ */
+
 public class JsonUtil <T> {
     /**
      * This method parses JSON file into POJO, using DTO class

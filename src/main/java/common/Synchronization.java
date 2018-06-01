@@ -11,6 +11,11 @@ import org.slf4j.Logger;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Created by Pavlo Bida in 2018
+ * https://github.com/PavloBida
+ */
+
 public class Synchronization {
 
     private static final Logger LOG = LogFactory.getLogger(Synchronization.class);

@@ -3,6 +3,11 @@ package dto;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * Created by Pavlo Bida in 2018
+ * https://github.com/PavloBida
+ */
+
 public class CommentsDTO {
     private int postId;
     private int id;

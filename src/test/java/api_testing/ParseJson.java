@@ -7,6 +7,11 @@ import util.JsonUtil;
 
 import java.util.List;
 
+/**
+ * Created by Pavlo Bida in 2018
+ * https://github.com/PavloBida
+ */
+
 public class ParseJson {
 
     @Test
