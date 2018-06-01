@@ -20,6 +20,7 @@
         <logback.version>1.1.2</logback.version>
         <slf4j.version>1.7.7</slf4j.version>
         <appium.version>5.0.4</appium.version>
+        <rest-assured.version>3.0.6</rest-assured.version>
 
         <!--Configuration-->
         <testng.file.path>src/test/resources/testng.xml</testng.file.path>
@@ -57,6 +58,13 @@
             <artifactId>java-client</artifactId>
             <version>${appium.version}</version>
         </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${rest-assured.version}</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
