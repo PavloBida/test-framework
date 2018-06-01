@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
 public class ScreenshotUtil {
 
     private static final Logger LOG = LogFactory.getLogger(ScreenshotUtil.class);
-
+    
     private WebDriver driver;
 
     public ScreenshotUtil(WebDriver driver) {
