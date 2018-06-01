@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import pageobject_demoqa.SideMenu;
+import ru.yandex.qatools.allure.annotations.Step;
 
 public class DraggablePage extends SideMenu{
 
@@ -57,6 +58,7 @@ public class DraggablePage extends SideMenu{
         this.driver = driver;
     }
 
+    @Step("Dragging the draggable box")
     public void dragDraggableBox(int xOffset, int yOffset) {
         new Actions(driver)
                 .dragAndDropBy(draggableBox, xOffset, yOffset)

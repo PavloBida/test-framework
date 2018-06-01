@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import pageobject_demoqa.main_menu_pages.DraggablePage;
+import ru.yandex.qatools.allure.annotations.Step;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -76,6 +77,7 @@ public class SideMenu extends TopMenu {
                 tooltipButton, framesAndWindowsButton));
     }
 
+    @Step("Clicked Draggable button")
     public DraggablePage clickDraggableButton() {
         demoDropdown.click();
         draggableButton.click();
