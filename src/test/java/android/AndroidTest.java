@@ -1,9 +1,8 @@
 package android;
 
-import common.BaseSetup;
 import org.testng.annotations.Test;
 
-public class AndroidTest extends BaseSetup {
+public class AndroidTest extends AndroidWebBase {
 
     /**
      * This is just a placeholder test for proof of concept

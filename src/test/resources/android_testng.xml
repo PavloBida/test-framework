@@ -9,6 +9,7 @@
     <parameter name="appPath" value=""/>
     <parameter name="appPackage" value=""/>
     <parameter name="appActivity" value=""/>
+    <parameter name="url" value=""/>
     
     <test name="test1" parallel="false" thread-count="1" preserve-order="true">
         <classes>
