@@ -21,6 +21,7 @@
         <slf4j.version>1.7.7</slf4j.version>
         <appium.version>5.0.4</appium.version>
         <rest-assured.version>3.0.6</rest-assured.version>
+        <selenium.version>3.13.0</selenium.version>
 
         <!--Configuration-->
         <testng.file.path>src/test/resources/</testng.file.path>
@@ -64,6 +65,11 @@
             <artifactId>rest-assured</artifactId>
             <version>${rest-assured.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
         </dependency>
 
     </dependencies>
