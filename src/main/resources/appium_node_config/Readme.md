@@ -1,5 +1,5 @@
 ### Here's a way to execute tests on two Appium sessions simultaneously
-##### 1. Download Selenium Standalone Server from [Selenium Website](https://www.seleniumhq.org/download/) or you can get the one from [current project](https://github.com/PavloBida/test-framework/blob/master/src/main/resources/selenium-server-standalone-3.13.0.jar).
+##### 1. Download Selenium Standalone Server from [Selenium Website](https://www.seleniumhq.org/download/)
 ##### 2. Start Selenium Hub like this:
 ```
 java -jar selenium-server-standalone-3.13.0.jar -role hub -port 4445
