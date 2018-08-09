@@ -3,11 +3,9 @@
 <suite name="demoqa" verbose="1" parallel="tests">
 
     <test name="1">
-        <parameter name="platformName" value="Android"/>
         <parameter name="deviceName" value="emulator-5556"/>
         <parameter name="platformVersion" value="7.1.1"/>
         <parameter name="browserName" value="Chrome"/>
-        <parameter name="systemPort" value="4445"/>
         <parameter name="serverURL" value="http://127.0.0.1:4445/wd/hub"/>
         <classes>
             <class name="android.AndroidTest"/>
@@ -15,11 +13,9 @@
     </test>
 
     <test name="2">
-        <parameter name="platformName" value="Android"/>
         <parameter name="deviceName" value="emulator-5554"/>
         <parameter name="platformVersion" value="7.1.1"/>
         <parameter name="browserName" value="Chrome"/>
-        <parameter name="systemPort" value="4445"/>
         <parameter name="serverURL" value="http://127.0.0.1:4445/wd/hub"/>
         <classes>
             <class name="android.AndroidTest"/>

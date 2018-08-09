@@ -1,5 +1,5 @@
 ### Here's a way to execute tests on two Appium sessions simultaneously
-##### 1. Download Selenium Standalone Server from [Selenium Website](https://www.seleniumhq.org/download/) or you can get the one from [current project](src/main/resources).
+##### 1. Download Selenium Standalone Server from [Selenium Website](https://www.seleniumhq.org/download/)
 ##### 2. Start Selenium Hub like this:
 ```
 java -jar selenium-server-standalone-3.13.0.jar -role hub -port 4445
@@ -20,4 +20,4 @@ Like this:
 - Be sure to specify correct devices that are currently available on your local pc. You can find them out with: 'adb devices' command.
 - Be sure that the version of Selenium Standalone Server you've downloaded corresponds the Selenium Java Client version in your pom.xml/build.gradle.
 ##### 5. That's it. You can execute tests on multiple Android devices at a time.
-For an example, please take a look [here](src/test/resources/android_multithread.xml)
+For an example, please take a look [here](https://github.com/PavloBida/test-framework/blob/master/src/test/resources/android_multithread.xml)
