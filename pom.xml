@@ -94,7 +94,7 @@
                         </property>
                         <property>
                             <name>listener</name>
-                            <value>common.ScreenshotListener</value>
+                            <value>common.ScreenshotHelper</value>
                         </property>
                     </properties>
                 </configuration>

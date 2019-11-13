@@ -53,7 +53,7 @@ public class WebDriverFactory {
     /**
      * Initializes a WebDriver instance for desired browser and capabilities.
      * Capabilities are set in a client class before instantiating this class and passed through the constructor.
-     * @return  We
+     * @return  WebDriver instance
      */
     public WebDriver initWebDriver() {
         if(browserEnum != null) {
