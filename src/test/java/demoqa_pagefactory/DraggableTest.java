@@ -1,16 +1,12 @@
 package demoqa_pagefactory;
 
-import common.WebTestBase;
+import io.qameta.allure.*;
+import ui_core.WebTestBase;
 import org.openqa.selenium.Point;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pageobject_demoqa.main_menu_pages.DraggablePage;
-import ru.yandex.qatools.allure.annotations.Description;
-import ru.yandex.qatools.allure.annotations.Features;
-import ru.yandex.qatools.allure.annotations.Severity;
-import ru.yandex.qatools.allure.annotations.Step;
-import ru.yandex.qatools.allure.model.SeverityLevel;
 
 public class DraggableTest extends WebTestBase {
 
@@ -26,7 +22,6 @@ public class DraggableTest extends WebTestBase {
     }
 
     @Test(priority = 5, description = "Dragging web element scenario")
-    @Features("Dragging")
     @Severity(SeverityLevel.NORMAL)
     @Step("Verifying dragging the box around")
     @Description("Verifies that the box can be dragged around on the Draggable page")

@@ -1,20 +1,19 @@
 package demoqa_pagefactory;
 
-import common.WebTestBase;
+import io.qameta.allure.Description;
+import io.qameta.allure.Features;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import ui_core.WebTestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageobject_demoqa.main_menu_pages.AboutUsPage;
 import pageobject_demoqa.main_menu_pages.ContactPage;
 import pageobject_demoqa.main_menu_pages.ServicesPage;
-import ru.yandex.qatools.allure.annotations.Description;
-import ru.yandex.qatools.allure.annotations.Features;
-import ru.yandex.qatools.allure.annotations.Severity;
-import ru.yandex.qatools.allure.model.SeverityLevel;
 
 public class MainPagesTest extends WebTestBase {
 
     @Test(priority = 2, description = "Main pages of the website testing")
-    @Features("Main")
     @Severity(SeverityLevel.NORMAL)
     @Description("Verifies that main pages of the website are displayed")
     public void verifyPagesAreOpened() {

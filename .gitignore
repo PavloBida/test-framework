@@ -39,4 +39,4 @@ Thumbs.db
 ######################
 *.idea
 *.iml
-
+src/main/resources/temp/*

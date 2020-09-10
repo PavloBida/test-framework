@@ -1,6 +1,6 @@
 package util;
 
-import common.LogFactory;
+import core.LogFactory;
 import org.slf4j.Logger;
 
 import java.io.IOException;

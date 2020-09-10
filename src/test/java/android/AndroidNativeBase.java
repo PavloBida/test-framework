@@ -1,7 +1,7 @@
 package android;
 
 import com.codeborne.selenide.WebDriverRunner;
-import common.AndroidDriverFactory;
+import ui_core.AndroidDriverFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;

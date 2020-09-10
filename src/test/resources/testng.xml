@@ -15,6 +15,6 @@
     </test>
 
     <listeners>
-        <listener class-name="common.ScreenshotListener" />
+        <listener class-name="ui_core.ScreenshotListener" />
     </listeners>
 </suite>

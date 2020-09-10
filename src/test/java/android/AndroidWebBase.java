@@ -1,6 +1,6 @@
 package android;
 
-import common.AndroidDriverFactory;
+import ui_core.AndroidDriverFactory;
 import io.appium.java_client.AppiumDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
