@@ -17,7 +17,7 @@
         <allure.adaptor.version>1.5.4</allure.adaptor.version>
         <allure.plugin.version>2.14</allure.plugin.version>
         <aspectj.version>1.7.4</aspectj.version>
-        <logback.version>1.1.2</logback.version>
+        <logback.version>1.2.0</logback.version>
         <slf4j.version>1.7.7</slf4j.version>
         <appium.version>5.0.4</appium.version>
         <rest-assured.version>3.0.6</rest-assured.version>
